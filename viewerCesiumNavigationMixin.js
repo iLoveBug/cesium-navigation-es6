@@ -35,15 +35,6 @@ function viewerCesiumNavigationMixin (viewer, options) {
       delete viewer.cesiumNavigation
     }
   })(viewer))
-
-  defineProperties(viewer, {
-    cesiumNavigation: {
-      configurable: true,
-      get: function () {
-        return viewer.cesiumWidget.cesiumNavigation
-      }
-    }
-  })
 }
 
 /**
